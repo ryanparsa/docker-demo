@@ -1,5 +1,5 @@
 FROM golang:latest as builder
-
+ENV CGO_ENABLED=0
 WORKDIR /app
 
 COPY . .
